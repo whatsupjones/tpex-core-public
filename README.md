@@ -1,23 +1,38 @@
 # TPEX Core (Public)
 
-**Structured finance analytics and contract intelligence architecture.**
+**Structured finance intelligence architecture for contract-aware risk and decision modeling.**
 
-TPEX Core is a software and financial-engineering platform for modeling complex contract behavior, exposure dynamics, and decision pathways in structured finance contexts.
+TPEX Core combines software architecture and financial engineering to model complex contract structures, exposure behavior, and scenario-driven decision paths.
 
-## Why TPEX
-Traditional analytics tooling under-explains structural interactions across layered instruments. TPEX is designed to model those interactions as an integrated system.
+## Core Positioning
+Traditional analytics tools often flatten structural complexity. TPEX is designed to preserve that structure so underwriting, portfolio strategy, and risk interpretation are grounded in executable logic.
 
-## Platform Focus
-- Contract intelligence and lifecycle-aware analytics
-- Exposure and scenario modeling across structured positions
-- Decision support for underwriting, risk framing, and portfolio strategy
-- Architecture designed for operational use, not just research output
+## What TPEX Is Built To Deliver
+- Contract intelligence with lifecycle-aware analytics
+- Exposure graph modeling across layered structured positions
+- Scenario simulation for underwriting and portfolio strategy
+- Production-ready decision support, not analysis-only prototypes
+
+## Visual Snapshot (Non-Architectural)
+```mermaid
+flowchart TD
+    A[Contract Fidelity] --> D[Institutional Decision Confidence]
+    B[Scenario Depth] --> D
+    C[Risk Explainability] --> D
+    D --> E[Deployable Finance Intelligence]
+```
+
+## Public Quality Markers
+- Scenario coverage across instrument structures
+- Explainability of contract-to-risk propagation paths
+- Stability of model outputs under stress-case variation
+- Time-to-decision for underwriting and portfolio workflows
 
 ## Engineering Approach
-TPEX combines domain modeling with software architecture so financial logic is executable, testable, and deployment-ready.
+TPEX treats financial logic as software: executable, testable, and integration-ready.
 
 ## Collaboration
-I work with qualified partners on technical diligence, deployment strategy, and commercialization pathways.
+I engage with qualified partners on technical diligence, deployment strategy, and commercialization pathways.
 
 ## Public Boundary
 This repository is intentionally high-level.
