@@ -1,23 +1,16 @@
 # TPEX Core (Public)
 
-**Synthetic private equity exposure. Tranched, insured, and structured for 144A placement.**
+**A new structured finance asset class. Model-first design, software-second.**
 
-TPEX Core is a proprietary structured finance platform that models a new asset class: synthetic exposure contracts tethered to private equity company performance, tranched into senior/mezzanine/equity classes with an AA+ financial guarantee on the senior tranche. Student-*t* copula Monte Carlo simulation, IB-grade derivative pricing, and regulatory capital treatment — engineered as a single deployable system.
+TPEX Core is a proprietary structured finance instrument — designed first as a quantitative model, validated in spreadsheet form, then engineered into production software. The financial structure is the invention. The software makes it executable, auditable, and deployable for institutional placement.
 
 ---
 
-## Why This Exists
+## What This Is
 
-Private equity returns are inaccessible to most institutional allocators. Existing vehicles force a binary choice: direct LP commitments (illiquid, high minimums, J-curve) or listed PE proxies (correlated with equity markets, defeating the purpose).
+TPEX addresses a structural gap in private equity allocation. The instrument design, capital structure, and risk mechanics are original work backed by a published academic paper, 15 investment bank due diligence documents, and a full Monte Carlo simulation framework.
 
-No product currently combines:
-
-- **Synthetic exposure** — Performance-linked contracts, not fund LP interests or loans
-- **Structural subordination** — Three risk classes with different return/risk profiles from the same portfolio
-- **Insurance arbitrage** — AA+ wrap on the senior tranche collapses Basel III risk weight from 1250% to 20%
-- **Secondary market infrastructure** — Regime-gated liquidity progression from Reg D through 144A to exchange-traded
-
-TPEX is a new asset class traveling on 40+ years of proven structured credit infrastructure — CUSIP, DTC, TRACE, 144A, rating agency criteria, dealer networks.
+The model was built to survive institutional scrutiny — rating agency criteria, regulatory capital treatment, and dealer network infrastructure that has operated for 40+ years.
 
 ---
 
@@ -25,29 +18,29 @@ TPEX is a new asset class traveling on 40+ years of proven structured credit inf
 
 - **Dependence modeling** — Student-*t* copula with sector/stage correlation matrices capturing fat-tail dependence and joint extreme events
 - **Monte Carlo engine** — Parallelized path generation at 334,000+ paths/sec with convergence-validated IRR solving
-- **Waterfall mechanics** — Priority-based cash flow allocation across three tranches with carried interest above hurdle
+- **Waterfall mechanics** — Priority-based cash flow allocation with carried interest above hurdle
 - **Derivative pricing** — 5 IB-grade engines with full Greeks and counterparty credit valuation adjustment
-- **Capital adequacy** — CCAR/DFAST stress scenarios with Basel III risk-weight treatment per tranche
-- **Insurance modeling** — Phased wrap activation with premium optimization and trigger conditions
+- **Capital adequacy** — CCAR/DFAST stress scenarios with Basel III risk-weight treatment
+- **Cohort analysis** — Portfolio scaling validation across multiple portfolio sizes with statistical convergence
 
 ```mermaid
 flowchart TD
-    subgraph Simulation Engine
-        A[Student-t Copula MC]
-        B[Sector/Stage Correlation]
-        C[Parallel Path Generation]
+    subgraph Quantitative Model
+        A[Copula-Based MC Simulation]
+        B[Convergence Validation]
+        C[Cohort Scaling Analysis]
     end
 
-    subgraph Structured Product
-        D[3-Tranche Waterfall]
-        E[AA+ Insurance Wrap]
-        F[Carried Interest]
+    subgraph Instrument Design
+        D[Cash Flow Waterfall]
+        E[Capital Structure]
+        F[Risk Treatment]
     end
 
-    subgraph Market & Risk
-        G[5 Derivative Engines]
-        H[CCAR/DFAST Stress]
-        I[Secondary Market Pricing]
+    subgraph Institutional Delivery
+        G[Derivative Pricing]
+        H[Stress Testing]
+        I[Regulatory Reporting]
     end
 
     A --> D
@@ -72,20 +65,6 @@ flowchart TD
 
 ---
 
-## Platform Scope
-
-| Domain | Capability |
-|--------|-----------|
-| **Structuring** | 3-tranche waterfall, insurance wrap triggers, carried interest, fee pipeline |
-| **Simulation** | Student-*t* copula MC, cohort scaling analysis, convergence validation |
-| **Derivatives** | 5 instruments — full Greeks, CVA, book-level risk aggregation |
-| **Risk** | VaR/CVaR, Basel III capital treatment, CCAR/DFAST, concentration, sensitivity |
-| **Reporting** | GAAP (ASC 815/820/810/860/606), bank pitch, trustee report, K-1/UBTI tax |
-| **Market Data** | SEC EDGAR universe construction, BDC/CLO benchmarks, FX rates |
-| **Delivery** | 20 CLI commands, REST API, WebSocket, Python bindings |
-
----
-
 ## Validation
 
 | Metric | Value |
@@ -103,16 +82,16 @@ flowchart TD
 
 ## Engineering
 
-Production Rust with optional GPU acceleration. Structured finance logic treated as software — executable, testable, auditable. LTO-optimized release builds. Python bindings for quant desk integration. Not a spreadsheet. Not a prototype. Designed for institutional deployment, regulatory scrutiny, and investment bank technical diligence.
+The model was proven first. The software is the production implementation — Rust, LTO-optimized, with optional GPU acceleration and Python bindings for quant desk integration. Designed for institutional deployment, regulatory scrutiny, and investment bank technical diligence.
 
 ---
 
 ## IP & Licensing
 
-TPEX Core is proprietary intellectual property, including the underlying structured product design, quantitative models, academic research, and software. Available for licensing on a selective basis.
+TPEX Core is proprietary intellectual property — the structured product design, quantitative models, academic research, and software. The instrument itself is the primary IP, not just the platform. Available for licensing on a selective basis.
 
 For licensing inquiries, technical diligence, or deployment discussions: [contact via GitHub profile].
 
 ## Public Boundary
 
-This repository is intentionally high-level. No proprietary model internals, waterfall logic, correlation structures, derivative pricing methodology, or implementation assets are disclosed here.
+This repository is intentionally high-level. No proprietary instrument design, capital structure, waterfall logic, correlation structures, or implementation assets are disclosed here.
